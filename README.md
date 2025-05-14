@@ -22,8 +22,7 @@
 <body>
   <h1>سلام! من صادق خدایی هستم</h1>
   <p>این وب‌سایت رسمی منه برای معرفی خوانندگی، عکس‌ها، آهنگ‌ها، و ویدیوها.</p>
-  <p>به‌زودی همه‌ی کارهام اینجا قرار می‌گیره.</p>
-  <p><a href="mailto:sadeghkhodaei@example.com">تماس با من</a></p>
+href="mailto:sadeghkhodaei@example.com">تماس با من</a></p>
 </body>
 </html>
 <!DOCTYPE html>
@@ -121,7 +120,6 @@
   <section>
     <h2>تماس با من</h2>
     <p>ایمیل: <a href="mailto:S6789649@gmail.com" style="color: lightblue;">S6789649@gmail.com</a></p>
-    <p>اینستاگرام: <a href="https://instagram.com/yourprofile" target="_blank" style="color: lightblue;">@yourprofile</a></p>
   </section>
 
   <section>
@@ -151,5 +149,97 @@
     }
   </script>
 
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>صادق خدایی - خواننده</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>صادق خدایی</h1>
+        <p>خواننده و هنرمند</p>
+        <a href="https://instagram.com/87sadegh.kh" target="_blank">اینستاگرام من</a>
+    </header>
+
+    <section>
+        <h2>آهنگ‌ها</h2>
+        <audio controls src="songs/sample.mp3"></audio>
+        <a href="songs/sample.mp3" download>دانلود آهنگ</a>
+    </section>
+
+    <section>
+        <h2>ویدیوها</h2>
+        <video controls width="320">
+            <source src="videos/sample.mp4" type="video/mp4">
+        </video>
+        <a href="videos/sample.mp4" download>دانلود ویدیو</a>
+    </section>
+
+    <section>
+        <h2>عکس‌ها</h2>
+        <img src="images/sample.jpg" alt="Sample" width="200">
+    </section>
+
+    <footer>
+        <a href="panel.html">ورود به پنل مدیریت</a>
+    </footer>
+</body>
+</html>
+body {
+    font-family: sans-serif;
+    direction: rtl;
+    background: #f2f2f2;
+    padding: 20px;
+    color: #333;
+}
+header, footer {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+section {
+    margin: 20px 0;
+}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پنل مدیریت</title>
+</head>
+<body>
+    <h2>ورود به پنل مدیریت</h2>
+    <form onsubmit="return checkPassword()">
+        <input type="password" id="pass" placeholder="رمز عبور را وارد کنید">
+        <button type="submit">ورود</button>
+    </form>
+    <script>
+    function checkPassword() {
+        var pass = document.getElementById("pass").value;
+        if (pass === "1250978841") {
+            alert("خوش آمدید صادق!");
+            window.location.href = "admin.html";
+            return false;
+        } else {
+            alert("رمز اشتباه است!");
+            return false;
+        }
+    }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پنل مدیریت - صادق خدایی</title>
+</head>
+<body>
+    <h2>به پنل مدیریت خوش آمدید</h2>
+    <p>در نسخه رایگان GitHub شما باید فایل‌ها را مستقیماً در گیت‌هاب یا با Acode اضافه/حذف کنید.</p>
 </body>
 </html>
