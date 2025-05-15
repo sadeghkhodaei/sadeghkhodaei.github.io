@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود به مدیریت</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>ورود به مدیریت سایت</h2>
+  <input type="password" id="pass" placeholder="رمز عبور">
+  <br>
+  <button onclick="login()">ورود</button>
+
+  <script>
+    function login() {
+      const p = document.getElementById('pass').value;
+      if (p === '1250978841') {
+        window.location.href = 'admin.html';
+      } else {
+        alert('رمز اشتباه است');
+      }
+    }
+  </script>
+
+</body>
+</html>
