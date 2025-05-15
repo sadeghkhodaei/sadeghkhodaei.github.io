@@ -41,3 +41,44 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>پنل مدیریت</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>ورود به پنل</h2>
+    <input type="password" id="password" placeholder="رمز عبور">
+    <button onclick="checkPassword()">ورود</button>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <h2>خوش آمدید!</h2>
+
+    <textarea id="bio-edit" placeholder="ویرایش بیوگرافی"></textarea>
+    <button onclick="updateBio()">ذخیره بیوگرافی</button>
+
+    <h3>افزودن عکس</h3>
+    <input type="text" id="photo-url" placeholder="آدرس عکس">
+    <button onclick="addPhoto()">افزودن</button>
+
+    <h3>افزودن آهنگ</h3>
+    <input type="text" id="song-url" placeholder="آدرس آهنگ mp3">
+    <button onclick="addSong()">افزودن</button>
+
+    <h3>افزودن ویدیو</h3>
+    <input type="text" id="video-url" placeholder="آدرس ویدیو mp4">
+    <button onclick="addVideo()">افزودن</button>
+
+    <h3>افزودن تبلیغ کلیکی</h3>
+    <input type="text" id="ad-img" placeholder="آدرس تصویر تبلیغ">
+    <input type="text" id="ad-link" placeholder="لینک کلیک">
+    <button onclick="addAd()">افزودن تبلیغ</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
